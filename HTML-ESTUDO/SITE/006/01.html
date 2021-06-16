@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../sources/icons/001-icon_site.png" type="image/x-icon">
+    <title>Adicionando Midias</title>
+</head>
+<body>
+    <h1>ADICIONANDO MIDIAS:</h1>
+
+    <h2>ADICIONANDO IMAGEM NORMAL:  </h2>
+    <p><img src="../sources/pictures/005-paisagem_original.png" alt="IMAGEM DE PAISAGEM" title="PAISAGEM"> </p>
+    <p>Essa imagem não é flexível, observe que conforme você diminui a tela ela permanece o mesmo tamanho.</p>
+
+    <h2>ADICIONANDO IMAGEM FLEXIVEL: </h2>
+    <p>
+    <picture>  <!- CUIDADO COM A ORDEM DAS IMAGENS TEM QUE SER DA MENOR PARA A MAIOR QUANDO FOR USADO O ATRIBUTO max-width ->
+       
+        <source media="(max-width: 600px)"   srcset="../sources/pictures/002-paisagem400px.png"  type="image/png">
+        <source media="(max-width: 800px)"   srcset="../sources/pictures/003-paisagem600px.png"  type="image/png">
+        <source media="(max-width: 1100px)"  srcset="../sources/pictures/004-paisagem1000px.png" type="image/png">
+        <img src="../sources/pictures/005-paisagem_original.png" alt = "IMAGEM DE PAISAGEM" title="PAISAGEM">
+    </picture>
+    </p>
+    <p>Essa imagem é flexível, observe que conforme você diminui a tela ela fica menor.</p>
+
+    <h2>ADICIONANDO AUDIO:</h2>
+    <audio controls title="AUDIO" preload="metadata" autoplay loop> 
+        <source src="../sources/sound/01-TIM_MAIA.mp3" type="audio/mpeg">
+        <source src="../sources/sound/02-TIM_MAIA.ogg" type="audio/ogg">
+        <p>Seu navegador não conseguiu reproduzir o audio, clique <a href="../sources/sound/01-TIM_MAIA.mp3" dowlaond="AUDIO" type="audio/mpeg" target="_blank">aqui</a>para fazer o download.</p>
+    </audio>
+    
+  
+    <h2>ADICIONANDO VIDEO: 
+    <P>
+    <video width="600" heigth = "300" controls preload="metadata" poster="../sources/pictures/001-capa_video.png ">
+        <source src="../sources/movies/001-video.m4v" type="video/mp4">
+        <source src="../sources/movies/002-video.webm" type="video/webm">
+        Infelizmente seu navegador não conseguiu reproduzir o video.
+    </video>
+    </P>
+    <h2>ADICIONANDO VIDEO EXTERNOS:</h2>
+  
+    <h3>VIDEO DO VIMEO:</h3>
+    <iframe src="https://player.vimeo.com/video/149031736?color=ff0179" width="600" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+   
+    <h3>VIDEO DO YOUTUBE: </h3>
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/YylAghUJxNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <p><br><strong>ATRIBUTOS DA TAG IFRAME:</strong></p>
+    <ul>
+        <li><strong>align: </strong>termina qual será o alinhamento do conteúdo, que pode ser left, right, top, middle e bottom;
+        <li><strong>frameborder:</strong> especifica se haverá ou não uma borda ao redor do iFrame — seus valores correspondem a 0 para não ou 1 para sim;
+        <li><strong>height:</strong> é o valor em pixels referente à altura do quadro;
+        <li><strong>width: </strong>determina a largura do quadro.
+        <li><strong>name:</strong> indica o nome do elemento, sendo utilizado principalmente para facilitar o acesso à tag por parte de um código JavaScript;
+        <li><strong>sandbox:</strong> habilita uma série de restrições ao conteúdo do iFrame, como allow-forms para permitir formulários, allow-popups, allow-scripts, entre outros;
+        <li><strong>scrolling:</strong> determina se o elemento exibirá ou não a barra de rolagem — seus valores podem ser yes, no ou auto;
+        <li><strong>src: </strong>representa a URL da página que será inserida no iFrame;
+        <li><strong>srcdoc:</strong> representa um conteúdo HTML da página para inserir no iFrame;
+    </ul>
+    <p><a href="../000/01.html" target="_self" rel="prev" herflang="pt-br"><img src="../sources/icons/002-botao_voltar.png" alt="BOTÃO VOLTAR" ></a> <strong>VOLTAR</strong></p>
+
+</body>
+</html>

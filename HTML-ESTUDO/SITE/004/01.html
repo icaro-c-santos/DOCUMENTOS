@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../sources/icons/001-icon_site.png" type="image/x-icon">
+    <title>Links</title>
+</head>
+<body>
+<h1>Usando HyperLinks: </h1>
+<h2>Links para paginas: </h2>
+<p>Para usar um link usamos a seguinte tag:</p>
+
+<p>&lt;a href="URL" target="abertura" hreflang="idioma" rel="dono do link"> Texto do link&lt;/a&gt;</p>
+<ul>
+<li><p>href: O link para onde você vai dericionar o usuario.</p></li>
+<li><p>target: Temos varios, os mais importantes e em uso ainda são:</p>
+    <ul type="circle">
+        <p><li>_blank: vai abrir o link em uma nova janela em branco.</li></p>
+        <p><li>_self: vai abrir o link na janela ou frame atual (padrão).</li> </p>
+        <p>Observação: O _ antes da palavra é obrigatorio.</p>
+    </ul>
+</li>
+<li><p>hreflang: Idioma da pagina para o qual o link direciona.</p></li>
+<li><p>rel: Autor da pagina que o link direciona, temos os seguintes atributos:</p></li>
+    <ul type="circle">
+        <li><p>next: indica que o link é para a próxima parte do documento atual.</p></li>
+        <li><p>prev: indica que o link é para a parte anterior do documento atual.</p></li>
+        <li><p>author: indica que é um link para o site do autor do artigo atual.</p></li>
+        <li><p>external: indica que é um link para outro site que não faz parte do site.</p></li>
+        <li><p>nofollow: indica que é um link para um site não endossado, como um link pago.</p></li>
+    </ul>
+</ul>
+
+<h2>Links para Dowloands: </h2>
+<p>Para usar um link usamos a seguinte tag:</p>
+<p>&lt;a href="URL" dowloand="nome do arquivo" type="tipo do arquivo"> Texto do link&lt;/a&gt;</p>
+<ul>
+<p><li>herf: link do arquivo.</li></p>
+<p><li>dowloand: nome que o arquivo vai ter ao ser baixado.</li></p>
+<p><li>type: tipo do arquivo temos varios deles para saber mais acessar:
+<a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="blank" hreflang ="en" rel="external">Lista oficial IANA.</a></li></p>
+<p><a href="../000/01.html" target="_self" rel="prev" herflang="pt-br"><img src="../sources/icons/002-botao_voltar.png" alt="BOTÃO VOLTAR" ></a> <strong>VOLTAR</strong></p>
+</ul>
+</body>
+</html>
