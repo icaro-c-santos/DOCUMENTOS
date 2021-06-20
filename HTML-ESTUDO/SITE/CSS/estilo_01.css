@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+background-color: rgba(14, 8, 8, 0.863);
+color: blanchedalmond;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+    background-color: teal;
+}
+
+
+h2{
+    text-align: center;
+    background-color: teal;
+    color: white;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+
+
+
