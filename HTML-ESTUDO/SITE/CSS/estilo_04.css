@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgba(32, 26, 26, 0.979);
+    background-image: linear-gradient(to right ,#000000ec ,#312d2d);
     color: blanchedalmond;
     font-family:  Helvetica, sans-serif,arial;
-    }
     
+}
     h1{
         text-align: center;
         background-color: teal;
@@ -15,23 +15,22 @@ body{
     
     
     h2{
-        text-align: center;
-        background-color: teal;
+        text-align: left;
         color: white;  
-        font-family: 'Times New Roman', Times, serif;
+        font-family: Helvetica, arial,sans-serif;
     }
     
 p{
     color: white;
     text-align: justify;
     display: inline-block;
-    font-family:  Helvetica, sans-serif,arial;
+    font-family: Helvetica, sans-serif,arial;
     font-size: 1.2em;
     
 }
 
 a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
 }
 
