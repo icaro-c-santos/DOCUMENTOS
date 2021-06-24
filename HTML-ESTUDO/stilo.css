@@ -1,25 +1,13 @@
 @charset "UTF-8";
 body{
     background-color: burlywood;
+    width: 1200px;
+    height: 900PX;
 }
 
 h1{
-    padding: 2em;
-    text-align: center;
-}
-
-div >p{
-    background-color: darkkhaki;
-    display: inline-block;
-
-}
-div{
     background-color: rgb(92, 86, 86);
-    height: 350px;
-
+    width: 100%;
+    height: 100%;
 }
 
-iframe{
-   text-align: center;
-   
-}
