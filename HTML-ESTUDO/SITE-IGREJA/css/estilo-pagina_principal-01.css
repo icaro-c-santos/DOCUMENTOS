@@ -1,0 +1,122 @@
+@char-set;
+
+:root{
+
+    --cor_01: #000000;
+    --cor_02: rgb(233, 218, 14);
+    --cor_03: rgb(31, 238, 221);
+    --cor_04: rgb(159, 16, 172);
+
+    --font_texto:  Arial, Helvetica, sans-serif;
+    --font_titulo: 'Times New Roman', Arial Helvetica, sans-serif;
+    --font_cabeça: fantasy, Arial Helvetica, sans-serif;
+}
+
+
+header{
+   
+    font-family: var(--font_cabeça);    
+    color: hsl(61, 86%, 49%);
+    padding: 10px 10px;
+    border: 4px solid blue;
+    background-image: linear-gradient(to bottom, gold ,black);
+    
+}
+
+body{
+    padding: 20px 60px;
+    background-image: url(../pictures/CEU.png);
+    background-attachment: fixed;
+}
+header >h1{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    color: rgb(3, 0, 0);
+    text-align: center;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+nav{
+    display: flex;
+    font-family: var(--font_cabeça);    
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+a#menu{
+    font-family: var(--font_titulo);
+    color: white;
+    font-size: 1.2rem;
+    margin: 5px 5px;
+}
+
+
+
+main{
+    margin: 0px;
+    padding: 0px;
+}
+
+.primeira-etapa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+article.mensagem-boas-vindas{
+
+    background-color: var(--cor_02);
+    display: inline-flex;
+    flex-flow: column wrap;
+    max-width: 800px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    
+}
+
+article.mensagem-boas-vindas >p{
+ font-size: 1rem;
+ color: var(--cor_01);
+ text-align: justify;
+ font-family: var(--font_texto);
+ padding: 0px 20px;
+ display: flex;
+ flex-flow: row wrap;
+}
+
+article.mensagem-boas-vindas >h1{
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--cor_01);
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 10px 10px 5px 10px;
+
+}
+
+div.banner-datas > iframe{
+    display: block;
+    margin-bottom: 20px;
+}
+aside.proximo-culto{
+    background-color: var(--cor_02);
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+}
+
+div.banner-datas{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+

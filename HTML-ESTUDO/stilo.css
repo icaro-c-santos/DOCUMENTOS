@@ -1,13 +1,35 @@
 @charset "UTF-8";
-body{
-    background-color: burlywood;
-    width: 1200px;
-    height: 900PX;
+
+
+
+
+div.po{
+    display: inline-flex;
+    background-color: blueviolet;
+    flex-direction: row;
+    flex-wrap: Wrap;
+    align-items: stretch;
+    justify-content: right;
 }
 
-h1{
-    background-color: rgb(92, 86, 86);
-    width: 100%;
-    height: 100%;
+div{
+    display: inline-flex;
+    background-color: burlywood;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 400px;
+  
 }
+
+
+p, h1,h2{
+border: 2px solid black;
+margin: 10px 10px;
+font-size: 14px;
+padding: 20px;
+}
+
+
+
 
