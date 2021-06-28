@@ -3,21 +3,32 @@
 
 
 
+div.ok{
+    display: flex;
+    align-items: stretch;
+    border: 2px solid black;
+    align-content: space-between;
+    align-items: center;
+  
+    justify-content: space-between;
+   
+}
+
 div.po{
-    display: inline-flex;
+    display: block;
     background-color: blueviolet;
-    flex-direction: row;
     flex-wrap: Wrap;
     align-items: stretch;
     justify-content: right;
+    align-content: space-between;
+
+    align-self: center;
 }
 
-div{
-    display: inline-flex;
+div.oi{
+    display: block;
     background-color: burlywood;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
     max-width: 400px;
   
 }
