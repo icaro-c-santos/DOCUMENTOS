@@ -3,35 +3,24 @@
 
 
 
-div.ok{
+div.A{
+    background-color: lawngreen;
+    display: block;
+}
+
+div.B{
+    background-color: lightcoral;
+    display: block;
+}
+
+
+div.TODOS{
+    background-color: black;
     display: flex;
-    align-items: stretch;
-    border: 2px solid black;
-    align-content: space-between;
-    align-items: center;
-  
-    justify-content: space-between;
-   
+    
+    align-content: center;
 }
 
-div.po{
-    display: block;
-    background-color: blueviolet;
-    flex-wrap: Wrap;
-    align-items: stretch;
-    justify-content: right;
-    align-content: space-between;
-
-    align-self: center;
-}
-
-div.oi{
-    display: block;
-    background-color: burlywood;
-    flex-wrap: wrap;
-    max-width: 400px;
-  
-}
 
 
 p, h1,h2{
