@@ -6,15 +6,16 @@
 div.A{
     background-color: lawngreen;
     display: block;
-    flex-grow: 1;
-    flex-basis: 400px;
+    flex-grow: 0;
+    flex-basis: 100px;
 }
 
 div.B{
     background-color: lightcoral;
-    display: block;
-    flex-basis: 600px;
-    flex-grow: 1;
+    display: flex;
+    flex-basis: 50px;
+    flex-grow: 0;
+   
 }
 
 
@@ -23,7 +24,6 @@ div.TODOS{
     display: flex;
     flex-flow: row wrap;
     
-    align-content: center;
 }
 
 

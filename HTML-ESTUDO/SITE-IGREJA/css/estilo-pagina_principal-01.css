@@ -12,7 +12,6 @@
     --font_cabeça: fantasy, Arial Helvetica, sans-serif;
 }
 
-
 header{
    
     font-family: var(--font_cabeça);   
@@ -61,11 +60,12 @@ a#menu{
 .primeira-etapa{
     display: block;
     flex-grow: 1;
-    flex-basis: 600px;
-
+    flex-basis: 800px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-article.mensagem-boas-vindas{
 
+article.mensagem-boas-vindas{
     background-image: url("../pictures/003-fundo.png");
     display: block;
     box-shadow: 1px 1px 20px 8px  rgb(0, 0, 0);
@@ -75,10 +75,10 @@ article.mensagem-boas-vindas{
 div.video_principal{
     display: flex;
     border: 20px double rgb(51, 51, 50);
-    flex-basis: 180px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
+    height: 50vmax;
+    max-height: 400px;
 }
-
 
 article.mensagem-boas-vindas >p{
  font-size: 1rem;
@@ -98,13 +98,14 @@ article.mensagem-boas-vindas >h1{
     text-align: center;
     justify-content: center;
     padding: 10px 10px 5px 10px;
+    margin-top: 0px;
 }
 
 div.calendario{
     display: flex;
     flex-grow: 1;
     height: 60vw;
-    max-height: 350px;
+    max-height: 400px;
     box-shadow: 1px -1px 13px 5px rgb(0 0 0 / 56%);
 }
 
@@ -119,28 +120,26 @@ aside.proximo-culto{
 
 div.banner-datas{
     display: block;
-    flex-grow: 1;
+    flex-grow: 1.2;
     flex-basis: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
+    
 
 .mensagem-da-semana{
     background-image: url("../pictures/003-fundo.png");
     display: flex;
     flex-flow: column wrap;
-    flex-grow: 1;
     padding: 10px;
     box-shadow: 1px -1px 13px 5px rgb(0 0 0 / 56%);
     margin-top: 10px;
     text-align: justify;
-
 }
 
 .mensagem-da-semana > h2{
     text-align: center;
 }
-
-
 
 main{
     display: flex;
@@ -148,6 +147,7 @@ main{
     max-width: 1200px;
     margin: auto;
     padding: 0px;
+    justify-content: space-between;
 }
 
 footer{
@@ -171,6 +171,7 @@ footer >ul >li{
     padding-top: 10px;
     margin-top: 10px;
 }
+
 footer >ul >li >a{
     font-family: var(--font_titulo);
     font-size: 1.2rem;
