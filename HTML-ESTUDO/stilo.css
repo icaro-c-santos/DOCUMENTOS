@@ -6,15 +6,15 @@
 div.A{
     background-color: lawngreen;
     display: block;
-    flex-grow: 1;
+    flex-grow: 0.3;
     flex-basis: 1;
 }
 
 div.B{
     background-color: lightcoral;
     display: flex;
-    flex-basis: 50px;
-    flex-grow: 0;
+    flex-basis: 1;
+    flex-grow: 0.3;
    
 }
 
