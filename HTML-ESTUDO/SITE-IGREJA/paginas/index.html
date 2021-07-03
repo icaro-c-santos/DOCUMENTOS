@@ -5,19 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo-pagina_principal-01.css">
+    <link rel="stylesheet" href="../css/estilo-menu-suspenso.css">
     <link rel="shortcut" href="" type="image/x-icon">
     <title>IGREJA BATISTA DE JESUS</title>
     
 </head>
 <body>
+
+    
+    <script>       
+        function play() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
+      </script>
+
     <header>
         <h1>IGREJA BATISTA DE JESUS CRISTO</h1>
-    <nav>
-        <a id="menu" href="../paginas/index.html" target="_self" rel="next">Home</a>
-        <a id="menu" href="" target="_self" rel="next">Sobre</a>
-        <a id="menu" href="../paginas/contato.html" target="_self" rel="next">Contato</a>
-        <a id="menu" href="004" target="_self" rel="next">Membros</a>
-    </nav>
+        <audio id="audio" src="../sounds/mp3.mp3"></audio>
+        <nav>
+            <ul>
+                <li><a  class="nav-menu" href="#" onclick="play()">Home</a></li>
+                <li><a  class="nav-menu" href="#" onclick="play()">About</a></li>
+                <li><a  class="nav-menu" href="#" onclick="play()">Contato</a></li>
+                <li><a  class="nav-menu" href="#" onclick="play()">Membros</a></li>  
+            </ul>
+        </nav>
+        
     </header>
     
     <main>
@@ -91,19 +105,9 @@
         <li><a href="" target="_blank" rel="next">LINK-ADD</a></li>
         <li><a href="" target="_blank" rel="next">LINK-ADD</a></li>
     </ul>
+    <div class="o" ></div>
 
-    <ul>
-        <li><a href="" target="_blank" rel="next">LINK-ADD</a></li>
-        <li><a href="" target="_blank" rel="next">LINK-ADD</a></li>
-        <li><a href="" target="_blank" rel="next">LINK-ADD</a></li>
-    </ul>
-
-    <ul>
-        <li><a href="" target="_blank" rel="next">LINK-ADD</a></li>
-        <li><a href="" target="_blank" rel="next">LINK-ADD</a></li>
-        <li><a href="" target="_blank" rel="next">Desenvolvido por IC.SANTOS</a></li>
-    </ul>
-
+    <div class="desenvolvedores"><p>DESENVOLVIDO POR ICARO DA CONCEIÇÃO SANTOS</p></div>
     </footer>
 
     
