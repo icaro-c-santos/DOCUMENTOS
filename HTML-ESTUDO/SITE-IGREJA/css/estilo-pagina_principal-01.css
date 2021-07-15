@@ -50,12 +50,7 @@ nav{
     justify-content: space-evenly;
 }
 
-a#menu{
-    font-family: var(--font_titulo);
-    color: white;
-    font-size: 1.2rem;
-    margin: 5px 5px;
-}
+
 
 .primeira-etapa{
     display: block;
@@ -166,6 +161,9 @@ footer{
 footer > ul {
     list-style-type: none;
     margin: auto;
+    flex-shrink: 0;
+    flex-grow: 2;
+    
 }
 
 footer >ul >li{
@@ -183,6 +181,83 @@ footer >ul >li >a{
 
 div.desenvolvedores{
 
+    flex-grow: 1;
+    border-left:20px double black;
 
-    border:5px solid black;
 }
+div.desenvolvedores >h1{
+    text-align: center;
+    margin: auto;
+}
+div.desenvolvedores >p{
+    padding-left: 10px;
+}
+
+
+@media only screen and (max-width: 560px){
+    
+        main{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .primeira-etapa{
+            display: block;
+            flex-grow: 1;
+            flex-basis: 800px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        div.banner-datas{
+            display: block;
+            flex-grow: 1.2;
+            flex-basis: 350px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        header{
+   
+            font-family: var(--font_cabeça);   
+            color: hsl(61, 86%, 49%);
+            padding: 10px 0px;
+            margin: 40px 0px;
+            max-width: 1200px;
+            box-shadow: 1px 1px 20px 8px  rgb(253, 249, 6);
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROPMw5eg5tnGzpQPE4CLHIcxvxue4NtMAfgQ&usqp=CAU");
+        
+        }
+        header >h1{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        footer{
+            flex-flow: column wrap;
+        }
+
+        footer >ul{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            text-align: center;
+        
+        }
+
+        div.desenvolvedores{
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 5px double black;
+            flex-grow: 1;
+            border-left-style: none;
+        
+        }
+
+
+    }
