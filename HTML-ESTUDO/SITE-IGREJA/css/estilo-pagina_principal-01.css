@@ -181,6 +181,7 @@ footer >ul >li >a{
 
 div.desenvolvedores{
 
+<<<<<<< HEAD
     flex-grow: 1;
     border-left:20px double black;
 
@@ -261,3 +262,5 @@ div.desenvolvedores >p{
 
 
     }
+=======
+}
