@@ -32,18 +32,24 @@ div#item{
     border: 1px solid black;
 }
 
+
 .telefones{
 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
     
 }
 .telefones >p{
     display: flex;
+    font-size: 2vmax;
+    
 }
 
 div#item >span{
     padding: 10px;
-    font-size: 3vmax;
+    font-size: 2.1vmax;
 }
 
 
@@ -52,7 +58,7 @@ div#item >img {
     width: 4vmax;
     max-width: max-content;
     
-    
+    display: block;
 }
 
 
@@ -85,7 +91,7 @@ h2{
     text-align: center;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     .main-contatos{
         background-image: url(../pictures/003-fundo.png);
         background-size: 100%;
@@ -117,8 +123,24 @@ h2{
         }
         .endereco{
             grid-area: endereco;
-            font-size: 1.8vmax;
-            font-family: fantasy;
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
         }
+        .telefones >p{
+            
+            font-size: 2.9vmax;
+            
+        }
+        .telefones{
+            flex-flow: column wrap;
+            display: flex;
+            padding-left: 20px;
+        }
+        
+        div#item >span{
+            padding: 10px;
+            font-size: 3vmax;
+        }
+        
 
 }
