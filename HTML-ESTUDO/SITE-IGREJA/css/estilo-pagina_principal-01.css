@@ -12,44 +12,6 @@
     --font_cabeça: fantasy, Arial Helvetica, sans-serif;
 }
 
-header{
-   
-    font-family: var(--font_cabeça);   
-    color: hsl(61, 86%, 49%);
-    padding: 10px 0px;
-    margin: 40px auto;
-    max-width: 1200px;
-    box-shadow: 1px 1px 20px 8px  rgb(253, 249, 6);
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROPMw5eg5tnGzpQPE4CLHIcxvxue4NtMAfgQ&usqp=CAU");
-
-}
-
-body{
-    background-image: url(../pictures/CEU.png);
-    background-attachment: fixed;
-    background-color: black;
-}
-
-header >h1{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 4.5vmax;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-nav{
-    display: flex;
-    font-family: var(--font_cabeça);    
-    flex-flow: row wrap;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-
 .D-01{
     grid-area: D-01;
     margin-bottom: 30px;
@@ -66,7 +28,6 @@ nav{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-   
 }
 
 .D-02{
@@ -75,10 +36,13 @@ nav{
 .video_principal{
     
     border: 20px double rgb(51, 51, 50);
+    max-width: 800px;
 }
 
 .video_principal >iframe{
     width: 100%;
+    max-width: 800px;
+    max-height: 600px;
     height:30vw;
 }
 
@@ -95,9 +59,7 @@ nav{
     background-image: url("../pictures/003-fundo.png");
     padding: 10px 20px;
     margin-top: 40px;
-
 }
-
 
 .D-03{
     grid-area: D-03;
@@ -132,8 +94,6 @@ nav{
     margin-bottom: 20px;
 }
 
-
-
 main{
     display: grid;
     grid-column: auto auto auto auto;
@@ -145,64 +105,13 @@ main{
         "D-01 D-01 D-01 D-03"
         "D-01 D-01 D-01 D-04"
         "D-02 D-02 D-02 D-04"
-
     ;
+    
     max-width: 1200px;
     margin: auto;
 }
 
-footer{
-    background-image: linear-gradient(to right, black, rgb(70, 66, 66));
-    display: flex;
-    flex-flow: row wrap;
-    list-style-type: unset;
-    justify-content: space-around;
-    margin: 40px auto;
-    max-width: 1180px;
-    box-shadow: 1px 1px 20px 8px  rgb(0, 0, 0);
-    color: white;
-    padding: 20px;
-    padding-bottom: 40px;
 
-}
-
-footer > ul {
-    list-style-type: none;
-    margin: auto;
-    flex-shrink: 0;
-    flex-grow: 2;
-    
-}
-
-footer >ul >li{
-    padding-top: 10px;
-    margin-top: 10px;
-}
-
-footer >ul >li >a{
-    font-family: var(--font_titulo);
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-div.desenvolvedores{
-
-    flex-grow: 1;
-}
-div.desenvolvedores >h1{
-    text-align: center;
-    margin: auto;
-}
-div.desenvolvedores >p{
-    font-size: 20px;
-}
-div.barra{
-    border: 5px solid rgb(223, 223, 223);
-    margin: 0px 60px;
-}
 
 
 @media only screen and (max-width: 840px){
@@ -233,17 +142,6 @@ div.barra{
         width: 100%;
         height:60vw;
     }
-    
-    footer{
-        flex-flow: column wrap;
-    }
-
-    footer >ul{
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        text-align: center;
-    }
 
     div.barra{
         border: 5px solid rgb(223, 223, 223);
@@ -258,10 +156,6 @@ div.barra{
 
 @media only screen and (max-width: 500px){
 
-    header >h1{
-        padding: 0px 10px;
-        font-size: 1.8rem;
-    }
     .mensagem-da-semana >h2{
         font-size: 1.5rem;
     }

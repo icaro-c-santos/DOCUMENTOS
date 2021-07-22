@@ -1,0 +1,23 @@
+.main-sobre >h1{
+    text-align: center;
+}
+
+.main-sobre{
+    background-image: url("../pictures/003-fundo.png");
+    padding: 20px 40px;
+    max-width: 1120px;
+    margin: auto;
+    text-align: justify;
+    font-size: 18px;
+}
+.imagem-01{
+    display: float;
+    float: right;
+    border: 2px solid black;
+    margin: 0px 20px;
+    padding: 10px 20px;
+}
+.imagem-02{
+    display: float;
+    float: right;
+}
