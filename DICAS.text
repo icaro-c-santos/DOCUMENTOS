@@ -1,0 +1,8 @@
+inputs{
+ 
+ placeholde: campo no texto com o que é esperado ex:"digite seu nome".
+ maxlength: maximo de carcteres permitidos.
+ required: nao permite campos em branco.
+
+
+}
