@@ -6,56 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut" href=""  type="image/x-icon">
     <link rel="stylesheet" href="css.css">
+    <script src="script.js"></script>
     <title>CALCULADORA IMC</title>
 </head>
 <script>
 
-    function imc(){
-        
-      var nome = document.getElementsByName("nome_usuario")[0].value;
-      var idade = document.getElementsByName("idade_usuario")[0].value;
-      var altura = document.getElementsByName("altura_usuario")[0].value;
-      var peso = document.getElementsByName("peso_usuario")[0].value;
-      var sexoF = document.getElementsByName("sexo_usuarioF")[0];
-      var sexoM = document.getElementsByName("sexo_usuarioM")[0];
-
-      var indice = (peso/(altura**2));
-      var resultado;
-
-      var div_resultado =window.document.querySelector('div.result')
-        div_resultado.style.display="block";
-
-      if(sexoF.checked ==false && sexoM.checked == false){
-             alert("ERRO! ESCOLHE UMA OPÇÃO DE SEXO!");
-      }
-      
-    if(sexoF.checked ==true){
-        if(indice>=42){
-            resultado = "OBESIDADE MORBIDA";
-        }if(indice>=37){
-            resultado = "OBESIDADE MORBIDA GRAU 2";
-        }if(indice>=32){
-            resultado = "OBESIDADE MORBIDA GRAU 1";
-        }if(indice>=27){
-            resultado = "LEVEMENTE ACIMDA DO PESO";
-        }if(indice>=22){
-            resultado = "PESO IDEAL";
-        }if(indice<22){
-            resultado = "SUBNUTRIDO/ABAIXO DO PESO";
-        }
-    }if(sexoM.checked ==true){
-
-    }
-    alert(resultado);
-    }
+    function a(){
+       
+    }   
+   
 </script>
 <body>
     <header>
         <h1>CALCULADORA DE INDICE DE MASSA CORPORAL</h1>
+        <span  onclick="fechar()"></span>>
     </header>
     <article>
         <div class="result">
-            <h1></h1>
+            <span onclick="fechar()"><img src="icone-fechar.png" alt="ICONE-FECHAR"></span>
+            <h1 class="resultado_nome"></h1>
+            <h1 class="resultado_texto"></h1>
+             
         </div>
             <form class="principal_formulario">
                 <span>
@@ -91,10 +62,9 @@
                     <input name="peso_usuario" type="text"
                     placeholder="PESO/kg" required>
                 </span>
-                <span><input name="submit_usuario" onclick="imc()" type="submit" ></span>
+                <span><input name="submit_usuario" onclick="imc()" type="button" value="ENVIAR"></span>
                 
             </form>
-
        </main>
        
     </article>
@@ -106,7 +76,7 @@
         <a class="conselho-saude" href="http://conselho.saude.gov.br/index.htm" target="_blank" rel="external">Conselho Nacional de Saúde</a>
 
         
-            <form class="duvida" action="">
+            <form class="duvida">
                 <span>
                     <label for="email_duvida">EMAIL:</label>
                     <input type="text" name="email_duvida" placeholder="EMAIL" required>
@@ -119,7 +89,6 @@
 
                 
             </form>
-            
             
            
     </footer>
