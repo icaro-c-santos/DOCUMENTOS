@@ -9,13 +9,6 @@
     <script src="script.js"></script>
     <title>CALCULADORA IMC</title>
 </head>
-<script>
-
-    function a(){
-       
-    }   
-   
-</script>
 <body>
     <header>
         <h1>CALCULADORA DE INDICE DE MASSA CORPORAL</h1>
@@ -28,28 +21,24 @@
             <h1 class="resultado_texto"></h1>
              
         </div>
-            <form class="principal_formulario">
+            <form class="principal_formulario" >
                 <span>
                     <label for="nome_usuario">NOME: </label>
-                    <input id="nome_usuario" name="nome_usuario" type="text" placeholder="DIGITE SEU NOME"  maxlength="30" required>
+                    <input id="nome_usuario" name="nome_usuario" type="text" placeholder="DIGITE SEU NOME"  maxlength="30">
                 </span>
 
                 <span>
                     <label for="idade_usuario">IDADE:</label>
-                    <input name="idade_usuario" type="number" placeholder="IDADE" max=120 required>
+                    <input name="idade_usuario" type="number" placeholder="IDADE" max=120 min=1>
                 </span>
                  
                 <span> 
                     <p>SEXO:</p>
-                    <span>
-                        <input name="sexo_usuarioM" type="checkbox">
-                        <label for="sexo_usuarioM">MASCULINO</label>
-                    </span>
-
-                    <span>
-                        <input name="sexo_usuarioF" type="checkbox">
-                        <label for="sexo_usuarioF">FEMININO</label>
-                    </span>
+                    <select name="sexo_usuario">
+                    <option></option>
+                    <option value ="MASCULINO">MASCULINO</option>
+                    <option value ="FEMININO">FEMININO</option>
+                    </select>
                </span>
 
                 <span>
@@ -62,8 +51,7 @@
                     <input name="peso_usuario" type="text"
                     placeholder="PESO/kg" required>
                 </span>
-                <span><input name="submit_usuario" onclick="imc()" type="button" value="ENVIAR"></span>
-                
+                <span><input name="submit_usuario" type="button" value="ENVIAR" onclick="imc()"></span>
             </form>
        </main>
        
@@ -73,10 +61,11 @@
         <a class="desenvolvedor"href="https://github.com/icaro-c-santos/DOCUMENTOS/blob/main/HTML-ESTUDO/perfil.html" target="_blank" rel="external"><p>DESENVOLVEDOR &nbsp;</p><img src="icone-github.png" alt="github"></a>
         
         
-        <a class="conselho-saude" href="http://conselho.saude.gov.br/index.htm" target="_blank" rel="external">Conselho Nacional de Saúde</a>
+        <a class="conselho-saude" href="https://formspree.io/icarosalna@hotmail.com" target="_blank" rel="external">Conselho Nacional de Saúde</a>
 
         
-            <form class="duvida">
+            <form class="duvida" method="post" action="https://smtpjs.com/v3/smtp.js">
+                
                 <span>
                     <label for="email_duvida">EMAIL:</label>
                     <input type="text" name="email_duvida" placeholder="EMAIL" required>
@@ -85,9 +74,8 @@
                     <label for="email_duvida">MEMSAGEM:</label>
                     <textarea required maxlength="400" class="mensagem_usuario"> </textarea>
                 </span>
-                <span><input type="submit"  onclick="a()" name="enviar_duvida"></span>
-
-                
+                <span><input type="submit" name="enviar_duvida"></span>
+ 
             </form>
             
            

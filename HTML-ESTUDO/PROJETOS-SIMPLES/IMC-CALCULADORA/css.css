@@ -74,6 +74,7 @@ div.result >h1{
     
     text-align: center;
     font-size: 40px;
+    font-weight: 900;
 }
 
 
@@ -109,17 +110,17 @@ form> span{
 }
 form> span:nth-child(3){
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     margin-bottom: 0px;
 }
 form> span:nth-child(3)>p{
-    text-align: center;
-    margin-top: 0px;
-    margin-right: 20px;
-    padding: 0px;
-    padding-top: 1px;
+    margin: 0px;
 }
 
+form> span:nth-child(3) > select{
+    width: 200px;
+    height: 25px;
+}
 
 form> span:nth-child(6)>input{
     height: 30px;
