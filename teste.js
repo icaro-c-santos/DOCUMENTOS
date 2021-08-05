@@ -1,6 +1,10 @@
-var altura = "1.1";
-if(){
-    console.log("somente numeros")
-}else{
-    console.log("LETRAS")
+var nome = "tudo bem";
+nome.split();
+for (const key in nome) {
+        const element = object[key];
+        
+    }
 }
+console.log(nome);
+
+

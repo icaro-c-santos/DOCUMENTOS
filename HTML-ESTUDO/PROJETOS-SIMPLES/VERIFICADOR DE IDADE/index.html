@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERIFICADOR DE IDADE</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="shortcut" type="image/x-icon" href="">
+    <script src="script.js"> </script>
+</head>
+<body>
+    
+<header>
+    <h1>VERIFICADOR DE IDADE</h1>
+</header>
+<main>
+   <form>
+        <span>
+            <label for="usuario_nascimento">NASCIMENTO:</label>
+            <input id="usuario_nascimento" type="date">
+        </span>
+        
+        <span>  
+            <label for="usuario_sexo">SEXO:</label>
+            <select  id="usuario_sexo">
+                <option>          </option>
+                <option>MASCULINO </option>
+                <option>FEMININO  </option>
+            </select>
+        </span>
+        <input type="button" id="usuario_verificar" onclick="verificar()" value="VERIFICAR">
+        
+   </form>
+   
+  
+   <div class="resultado">
+       <h2 id="nome"></h2>
+       <div id="resultado_imagem">
+           <img id="imagem" src="" alt="FOTO">
+       </div>
+   </div>
+    <a class="desenvolvedor" href="https://github.com/icaro-c-santos/DOCUMENTOS/blob/main/HTML-ESTUDO/perfil.html" target="_blank" rel="external"><p>©&nbsp;ICARO-C-SANTOS&nbsp;</p><img src="icone-github.png" alt="github"></a>   
+</main>
+<footer>
+
+
+</footer>
+</body>
+</html>

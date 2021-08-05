@@ -1,0 +1,174 @@
+body{
+    background-color: rgb(128, 128, 246);
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+header{
+    display: flex;
+    height: 200px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+h1{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 100px;
+    text-shadow: rgb(150, 150, 155) 4px 4px;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+main{
+    background-color: rgb(242, 238, 245);
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 750px;
+    max-height: 900px;
+    margin: 20px auto;
+    border-radius: 15px 15px;
+    padding: 40px;
+}
+
+form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+form >span>label{
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+#usuario_nascimento{
+    font-size: 18px;
+    width: 160px;
+    height: 25px;
+}
+#usuario_sexo{
+    font-size: 20px;
+    width: 250px;
+    height: 25px; 
+}
+#usuario_verificar{
+    width: 200px;
+    height: 25px;
+    margin: 40px auto 0px auto;
+}
+
+.resultado{
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+#resultado_imagem{
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: none;
+}
+
+#resultado_imagem >img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: none;
+}
+
+a{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    margin-top: 80px;
+    border-radius: 50px;
+}
+
+a:hover, #usuario_verificar:hover{
+    background-color: blueviolet;
+    transition-duration: 0.5s;
+}
+
+a:active{
+    background-color: rgb(14, 13, 13);
+    color: white;
+    transition-duration: 0s;
+}
+
+footer{
+    height: 300px;
+}
+
+@media only screen and (max-width: 850px){
+
+    h1{
+        font-size: 8vw;
+    }
+    header{
+        height: 20vw;;
+    }
+
+    main{
+        padding: 20px;
+    }
+
+    form{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        margin: 20px auto;
+        padding: 10px 20px;
+    }
+    form > span{
+        margin: 15px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 440px){
+
+    #usuario_sexo{
+        font-size: 18px;
+        width: 150px;
+        height: 25px; 
+    }
+    #usuario_nascimento{
+        font-size: 18px;
+        width: 220px;
+        height: 25px;
+    }
+    form{
+        margin: auto;
+    }
+    main{
+        padding: 5px;
+    }
+    
+    #resultado_imagem{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        display: none;
+      }
+      
+      #resultado_imagem >img{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          display: none;
+      }
+      a{
+        font-size: 5vw;
+      }
+      a>img{
+          width: 34px;
+          height: 32px;
+      }
+}
