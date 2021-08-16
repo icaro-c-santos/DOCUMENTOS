@@ -1,0 +1,47 @@
+body{
+
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background-color: black;
+    color: white;
+    height: 400px;
+}
+
+header >h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+header >img{
+    width: 300px;
+}
+
+main{
+    background-color: blanchedalmond;
+
+}
+
+
+#curso_descricao{
+    display: none;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
+    font-size:3vw;
+    font-weight: 900;
+    color: black;
+}
+
+
+footer{
+    background-color: blue;
+
+}
+
+

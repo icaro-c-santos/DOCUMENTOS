@@ -1,0 +1,50 @@
+
+main{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+div{
+    background-color: blue;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+   
+}
+p{
+    margin-top: 50%;
+    transform: translateY(-50%);
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+span{
+    background-color: brown;
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    animation-name: animacao;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes animacao {
+    from{
+        background-color: blue;
+    }to{
+        transform: scaleX(2) scaleY(2);
+        background-color: rgba(0, 0, 255, 0.013);
+    }
+}
