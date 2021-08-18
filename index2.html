@@ -8,26 +8,51 @@
 </head>
 
 <style>
-main{
-    width: 500px;
-    height: 500px;
-    margin: auto;
+div:nth-child(1){
+    width: 200px;
+    height: 50px;
     background-color: blueviolet;
 }
-p{
-    background-color: brown;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    margin: 0px;
-    padding: 0px;
+
+div:nth-child(2){
+    background-color: blueviolet;
+    width: 200px;
+    height: 0px;   
+    overflow: hidden;
+}
+
+.t{
+    height: 200px !important;
+    transition-duration: 2s;
+}
+.t2{
+    transition-duration: 2s;
 }
 
 </style>
 <body>
 
-    <main>
-     <p>MENU</p>
-    </main>
+  
+   <span>
+        <div onclick="abrir(this)" ondblclick="fechar(this)" class="primeira">a</div>
+        <div onclick="abrir(this)" class="segunda">b</div>
+   </span>
+   
+
+    <script>
+        
+        
+        function abrir(di){
+            di.classList.add('t');
+        }
+        function fechar(di){
+            di.classList.remove('t');
+            di.classList.add('t2');
+
+        }
+
+        
+
+    </script>
 </body>
 </html>
