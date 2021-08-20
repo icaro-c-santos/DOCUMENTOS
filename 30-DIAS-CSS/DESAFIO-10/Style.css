@@ -1,0 +1,28 @@
+
+body{
+    background-color: black;
+    color: white;
+    font-size: 60px;
+    font-family: fantasy Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 250px;
+}
+p::after{
+    animation-name: animacao;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    content: "";
+}
+@keyframes  animacao{
+    0%{
+        content: " \01F355";
+    }33%{
+        content: " \01F3AE";
+    }66%{
+        content: " \01F4BB";
+    }100%{
+        content: " \01F355";
+    }
+}
+
