@@ -1,0 +1,170 @@
+div{
+    font-size: 100px;
+    display: flex;
+    font-weight: 900;
+    width: 600px;
+    height:100px;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+span{
+    position: absolute;
+    width: 60px;
+    text-align: center;
+}
+span:nth-child(1){
+    left: 0%;
+    animation-name: animacao1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+span:nth-child(2){
+    left: 80px;
+    animation-name: animacao2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+span:nth-child(3){
+    left: 160px;
+    animation-name: animacao3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+span:nth-child(4){
+    left: 240px;
+    animation-name: animacao4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+span:nth-child(5){
+    left: 320px;
+    animation-name: animacao5;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+span:nth-child(6){
+    left: 400px;
+    animation-name: animacao6;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+span:nth-child(7){
+    left: 480px;
+    animation-name: animacao7;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+    
+}
+
+@keyframes cor {
+   from{
+    background-color: red;
+   } to{
+        background-color: blue;
+   }
+}
+
+@keyframes animacao1 {
+
+     0%{
+        color: red;
+        transform: translateX(0px);
+     }
+     50%{
+         transform: translateX(240px);
+         color: rgb(146, 10, 200);
+     }100%{
+        color: rgba(146, 10, 200, 0);
+     }
+     
+}
+@keyframes animacao2 {
+    0%{
+        color: red;
+        transform: translateX(0px);
+     }
+     50%{
+         transform: translateX(180px);
+         color: rgb(146, 10, 200);
+     }100%{
+        color: rgba(146, 10, 200, 0);
+     }
+}
+@keyframes animacao3 {
+    0%{
+        color: red;
+        transform: translateX(0px);
+     }
+     50%{
+         transform: translateX(110px);
+         color: rgb(146, 10, 200);
+     }100%{
+        color: rgba(146, 10, 200, 0);
+     }
+}
+
+@keyframes animacao4 {
+    0%{
+        color: red;
+        transform: translateX(0px);
+     }
+     50%{
+         transform: translateX(40px);
+         color: rgb(146, 10, 200);
+     }100%{
+        color: rgba(146, 10, 200, 0);
+     }
+}
+
+
+@keyframes animacao5 {
+    0%{
+        color: red;
+        transform: translateX(0px);
+     }
+     50%{
+         transform: translateX(-20px);
+         color: rgb(146, 10, 200);
+     }100%{
+        color: rgba(146, 10, 200, 0);
+     }
+}
+
+@keyframes animacao6 {
+    0%{
+        color: red;
+        transform: translateX(0px);
+     }
+     50%{
+         transform: translateX(-70px);
+         color: rgb(146, 10, 200);
+     }100%{
+        color: rgba(146, 10, 200, 0);
+     }
+}
+
+@keyframes animacao7 {
+    0%{
+        color: red;
+        transform: translateX(0px);
+     }
+     50%{
+         transform: translateX(-130px);
+         color: rgb(146, 10, 200);
+     }100%{
+         color: rgba(146, 10, 200, 0);
+     }
+}

@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+}
+
+.p1{
+    width: 900px;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(48, 39, 179);
+    font-size: 70px;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0%;
+
+}
+.p2{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 0, 0);
+    font-size: 70px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    background-color: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0%;
+    width: 0px;
+    transition-duration: 1s;
+}
+
+
+div{
+    width: 900px;
+    height: 25px;
+    position: absolute;
+    z-index: 0;
+    top: 40%;
+    left: 20%;
+   
+
+
+}
+div:hover .p2{
+    width: 900px;
+    transition-property: width;
+    transition-duration: 1s;
+}

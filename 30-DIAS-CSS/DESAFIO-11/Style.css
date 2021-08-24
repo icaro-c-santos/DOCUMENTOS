@@ -9,7 +9,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 p{ 
@@ -30,7 +29,6 @@ div{
     position: absolute;
     top: 0%;
     z-index: 1;
-   
 }
 main:hover #ok{
     height: 100%;
