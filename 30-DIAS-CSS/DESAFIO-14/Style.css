@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14vw;
+    text-align: center;
+    font-weight: 900;
+    background-image: url("image.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animacao {
+
+    from{
+        background-position-x: -100%;
+    }to{
+        background-position-x: 100%;
+    }
+}
+
