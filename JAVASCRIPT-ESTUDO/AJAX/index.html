@@ -11,20 +11,14 @@
 <body>
     <main>
 
-        <form id="formulario" >
+        <form id="formulario" action="http://localhost:8000/aluno" method="POST">
             <span>
-                <label for="name">NOME:</label>
+                <label for="nome">NOME:</label>
                 <input name="nome" id="nome"type="text">
             </span>
-            
-            <span>
-                <label for="matricula">MATRICULA:</label>
-                <input id ="matricula" name="matricula" type="text">
-            </span>
-
-            <input id="botao" type="button" value="CONFIRMAR" onclick="bt_acionar()">
+            <input id="botao" type="submit" onclick="click()" value="CONFIRMAR">
         </form>
-        <div id="dados"><span>X</span></div>
+        <div id="dados"><span></span></div>
         <footer></footer>
     </main>
     

@@ -1,0 +1,15 @@
+{
+  "name": "modulos",
+  "version": "1.0.0",
+  "description": "\"ESTUDO DE MODULOS\"",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "testar"
+  },
+  "author": "Icaro_Santos",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
+}

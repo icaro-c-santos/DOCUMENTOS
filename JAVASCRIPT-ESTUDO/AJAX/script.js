@@ -6,4 +6,5 @@ function bt_acionar(){
    div2.style.visibility ="visible";
     div2.style.opacity = "1";
    div2.style.transitionDuration="1.5s";
+
 }
