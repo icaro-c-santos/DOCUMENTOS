@@ -8,17 +8,10 @@
     <script src="script.js"></script>
      <title>SISTEMA DE NOTAS</title>
 </head>
-<script>
-
- function nd(){
-    document.formulario.nome.value ="ICARO";
- };
-
-</script>
 <body>
     <main>
 
-        <form name ="formulario" id="formulario" action="http://localhost:8000/aluno" method="POST">
+        <form id="formulario" action="http://localhost:8000/aluno" method="POST">
             <span>
                 <label for="nome">NOME:</label>
                 <input name="nome" id="nome"type="text">
@@ -36,8 +29,7 @@
                 <input name="turma" id="turma"type="text">
             </span>
             
-            <input id="botao" type="button" onclick="nd()" value="CONFIRMAR">
-            <input id="botao" type="submit"  value="CONFIRMAR">
+            <input id="botao" type="button" onclick="obter" value="CONFIRMAR">
         </form>
         <div id="dados"><span></span></div>
         <footer></footer>

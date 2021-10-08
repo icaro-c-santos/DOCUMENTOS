@@ -9,7 +9,6 @@ const funcao_assincrona = async () => {
 funcao_assincrona().then(console.log)/// PARA OBTER O RETORNO É PRECISO USAR O .THEN 
 
 
-
 console.log("INICIO");
 
 console.log("ETAPA 1 ");

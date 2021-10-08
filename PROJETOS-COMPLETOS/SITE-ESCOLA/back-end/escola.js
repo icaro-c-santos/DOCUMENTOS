@@ -17,5 +17,14 @@ app.post("/aluno",(req,res)=>{
     }
 })
 
+app.post("/alunoid",(req,res)=> {
+
+
+    try{
+        res.send(buscar_matricula(req.matricula));
+    }catch (e){
+        res.send("ERRO: "+e);
+    }
+});
 
 app.listen(8000,()=> console.log("SERIVODR ATIVO!"));
