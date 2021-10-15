@@ -3,17 +3,14 @@
 
         const  formData = new FormData(document.querySelector(".principal_formulario"));
 
-
         let nome = formData.get("nome_usuario");
         let idade = formData.get("idade_usuario");
         let sexo = formData.get("sexo_usuario");
         let peso = formData.get("peso_usuario");
         let altura = formData.get("altura_usuario");
 
-
         if(typeof(peso)==="string"){peso = peso.replace(',','.');}
-        if(typeof(altura)==="string"){altura = altura.replace(',','.');}
-
+        if(isNaN(peso)){alert("ERRO! PREENCHA O CAMPO PESO SOMENTE COM NUMEROS E PONTO EX: 1.98" ); return 0;}
 
         try{
              let resposta = verificar_imc(idade,sexo,peso,altura);

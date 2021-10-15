@@ -10,15 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="script2.js"></script>
     <title>CALCULADORA IMC</title>
-    <script>
-        alert("ATENÇÃO! SITE APENAS DEMONSTRATIVO PARA ESTUDO DA PROGRAMAÇÃO WEB, OS RESULTADOS OBTIDOS AQUI NÃO DEVEM SER LEVADOS EM CONSIDERAÇÃO, NEM TOMADOS COMO VERDADEIROS.");
-    </script>
    
-    <!-- SITE CRIADO PARA O APRENDIZADO DE CSS, HTML E JS.
-    ///  DATA CRIAÇÃO: MARÇO/2021 - FOCO PRINCIPAL APRENDER O USO DO HTML E CSS.
-    ///  DATA ATUZALIZAÇÃO: OUTUBRO/2021 FOCO PRINCIPAL APRENDER O USO DO JQUERY.
-    ///  OBSERVAÇÃO: AS REGRAS PARA MEDIÇÃO DO IMC NÃO SÃO PRIORIZADAS NESTE SITE.
-    ///  ULTIMA ATUALIZAÇÃO */ -->
     
 </head>
 <body>
@@ -35,20 +27,20 @@
             <h1 class="resultado_texto"></h1>
              
         </div>
-            <form id="pri" class="principal_formulario" >
+            <form class="principal_formulario" >
                 <span>
                     <label for="nome_usuario">NOME: </label>
-                    <input id="nome_usuario" name="nome_usuario" type="text"  placeholder="DIGITE SEU NOME"  maxlength="30" required  >
+                    <input id="nome_usuario" name="nome_usuario" type="text" placeholder="DIGITE SEU NOME"  maxlength="30">
                 </span>
 
                 <span>
                     <label for="idade_usuario">IDADE:</label>
-                    <input  id ="idade_usuario" name="idade_usuario" type="number"  required placeholder="IDADE" max=120 min=1>
+                    <input  id ="idade_usuario" name="idade_usuario" type="number" placeholder="IDADE" max=120 min=1>
                 </span>
                  
                 <span> 
                     <p>SEXO:</p>
-                    <select id= "sexo_usuario" name="sexo_usuario" required>
+                    <select id= "sexo_usuario" name="sexo_usuario">
                     <option></option>
                     <option value ="MASCULINO">MASCULINO</option>
                     <option value ="FEMININO">FEMININO</option>
@@ -65,7 +57,7 @@
                     <input id="peso_usuario" name="peso_usuario" type="text"
                     placeholder="PESO/kg" required>
                 </span>
-                <span><input name="submit_usuario" type="submit" value="ENVIAR"></span>
+                <span><input name="submit_usuario" type="button" value="ENVIAR" onclick="imc()"></span>
             </form>
        </main>
        
@@ -97,17 +89,14 @@
            
     </footer>
     <script>
-        
-      let form = document.getElementById("pri");
-       
-       form.addEventListener('submit', function( event ) {
-           event.preventDefault();
-           imc();
-       });
-
+         // APAGAR APOS FINALIZAR!
+      // document.getElementById("nome_usuario").value   =  "ICARO"; 
+     //  document.getElementById("sexo_usuario").value   =  "MASCULINO";
+     //  document.getElementById("idade_usuario").value  =   35;
+     //  document.getElementById("peso_usuario").value   =   50;
+     //  document.getElementById("altura_usuario").value =   25;
   
-  
-       </script>
+    </script>
   
 </body>
 </html>
