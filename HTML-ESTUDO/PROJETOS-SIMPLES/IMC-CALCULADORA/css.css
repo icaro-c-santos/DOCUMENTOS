@@ -202,6 +202,10 @@ footer>a:nth-child(1):hover,footer>a:nth-child(2):hover {
 }
 
 @media only screen and (max-width: 700px){
+
+    header >h1{
+        font-size: 40px;
+    }
     footer{
      grid-template-rows: 0.5fr 0.5fr 2fr;
      grid-template-columns: 1fr;
@@ -298,3 +302,9 @@ div.result >h1{
 }
 }
 
+@media only screen and (min-width: 1200px){
+
+   header > h1{
+        font-size: 80px;
+    }
+}
