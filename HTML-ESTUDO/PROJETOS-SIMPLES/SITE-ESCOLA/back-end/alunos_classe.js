@@ -1,52 +1,65 @@
 
-let id = 1;
-function  atualizar_id() {
-    id = id+1;
-}
+export class Aluno{
 
-export class aluno{
-
-    matricula = null;
-    nome = null;
-    idade = null;
-    turma = null;
-    cpf = null;
-    
-
-    constructor (nome,idade,turma,cpf){
-        this.nome = nome;
-        this.idade = this.set_idade(idade);
-        atualizar_id();
-        this.matricula = id;
-        this.turma = turma;
-        this.cpf = cpf;
+    constructor (nome,idade,sexo){
+        this.id = null,
+        this.matricula = null,
+        this.nome = null,
+        this.idade = null
+        this.sexo = null,
+        this.serie = null,
+        this.nome(nome);
+        this.setIdade(idade);
+        this.setSexo(sexo);
     }
 
-    get_nome(){
+    getId(){
+        return this.id;
+    }
+
+    getNome(){
         return this.nome;
     }
 
-    get_idade(){
+    getIdade(){
         return this.idade;
     }
 
-    get_matricula(){
+    getMatricula(){
         return this.matricula;
     }
-
-    set_nome(nome){
-        if(!nome){
-            this.nome = nome;
-        }else{
-            throw new Error("ERRO NOME INVALIDO!");
-        }
+    getSexo(){
+        return this.sexo;
     }
 
-    set_idade(idade){
-        if(idade>0){
+    getSerie(){
+        return this.serie;
+    }
+
+    setSexo(sexo){
+        this.sexo = sexo;
+    }
+
+    setNome(nome){
+        this.nome = nome;
+    }
+
+    setIdade(idade){
+        if(isNaN(idade)) throw "ERRO DIGITE APENAS NÚMEROS";
+        if(idade>0 && idade < 180){
             this.idade = idade;
         }else{
-            throw new Error("ERRO IDADE INVALIDA!");
+            throw ("ERRO IDADE INVALIDA! DIGITE UM VALOR ENTRE 0 e 180");
         }
     }
+
+    setSerie(serie){
+        this.serie = serie;
+    }
+
+    
+
+
+    
 }
+
