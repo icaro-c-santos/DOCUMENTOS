@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+    <title>FORMULARIO</title>
+</head>
+<body>
+
+    <header>
+        <h1>CADASTRO DE PESSOA</h1>
+    </header>
+
+    <main>
+        <form id="form_pessoa" name="form_pessoa" >
+            <span>
+                <label for="nome">NOME:</label>
+                <input id="nome"  name="nome" type="text" placeholder="DIGITE SEU NOME" required >
+            </span>
+            <span>
+                <label for="idade">IDADE: </label>
+                <input id="idade" name="idade" type="number" required>
+            </span>
+            <span>
+                    <span><label for="sexo">SEXO:</label></span>
+                    <span><input id="sexo_masculino" name="sexo" required type="radio" value="masculino"  >MASCULINO </span>
+                    <span><input id="sexo_feminino" name="sexo"  type="radio" value="feminino">FEMININO</span>
+                    <span><input id="sexo_indefinido" name="sexo" type="radio"  value="indefinido">INDEFINIDO</span>
+            </span>
+            <span>
+                <input type="submit" onclick="cadastro_pessoa()" name="enviar" id="enviar">ENVIAR</button>
+            </span>
+        
+        </form>
+    </main>
+
+    
+    <Footer></Footer>
+    <script>
+
+        let form = document.getElementById("form_pessoa");
+       
+        form.addEventListener('submit', function( event ) {
+            event.preventDefault();
+     
+        let nome = document.getElementById("nome");
+        let idade = document.getElementById("idade");
+        let sexo = document.querySelector("input[type=radio]:checked");
+
+           let dados = {
+
+                nome: nome.value,
+                idade: idade.value,
+                sexo: sexo.value,
+
+            }
+            console.log(dados);
+        });
+        
+    
+    </script>
+</body>
+</html>
