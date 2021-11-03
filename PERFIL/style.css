@@ -1,6 +1,7 @@
 body{
     background-image: url("work-gc7a0757e4_1920.jpg");
-    height: 2000px;
+    margin: auto;
+    max-width: 1400px;
 }
     .jumbotron {
       padding: 4rem 2rem;
@@ -9,12 +10,91 @@ body{
       border-radius: .3rem;  
     }
 
-    main{
-        height: 1200px;
+   
+    hr{
+        width: 100%;
+        padding: 0;
+        margin: 20px 0px;
+        border-bottom: 2px solid rgb(189, 188, 188);
+    }
+   
+    .curriculo{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+        margin-left: 10px;
+       
+    }
+    .curriculo:hover{
+        color: white;
+        opacity: 0.5;
+
+    }
+   
+    .projeto_atual{
+        align-items: center;
+        font-size: 30px;
+        color: white;
+    }
+   
+    .projeto_atual> :nth-child(2){
+      font-size: 16px;
+      color: white;
+      text-align: justify;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 30px;
+      margin-top: 5px;
+
     }
 
+    .dados{
+        height: 300px;
+        margin: 50px auto;
+    }
+    .dados_texto{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+    }
+   
+    .projetos, .programando{
+        border-radius: 20%;
+        margin-top: 36px;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 300px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 90px;
+        text-align: center;
+        background-color: black;
+    }
+    footer>hr{
+        display: none;
 
-.horas_codando{
-    background-image: url("white-g45a4858c4_640.jpg");
+    }
+   
+    @media only screen and (max-width: 991px) {
+       
+  
+     .dados{
+            height: auto;
+            margin: 50px auto;
+            padding: 40px;
+        }
+    footer{
+        flex-direction: column;
+        height: 600px;
+    }
+    footer >hr{
+        display: block;
+    }
 
-}
+    }
+
+    
