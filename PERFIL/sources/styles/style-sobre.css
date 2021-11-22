@@ -8,10 +8,13 @@ body{
  }
     .sobremim{
         background-color:  rgba(0, 0, 0, 0.808);
-        color: rgb(251, 251, 251);
+        color: rgb(228, 226, 226);
         padding: 20px;
         border-radius: 15px;
         margin: auto;
+        font-size: 18px;
+        line-height: 28px;
+       
     }
     .text{
         text-align: justify;
