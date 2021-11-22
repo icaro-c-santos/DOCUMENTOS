@@ -1,0 +1,57 @@
+body{
+    background-image: url("../img/work-gc7a0757e4_1920.jpg");
+    margin: auto;
+    max-width: 1400px;
+}
+ 
+    .sobremim{
+        background-color:  rgba(0, 0, 0, 0.808);
+        color: rgb(251, 251, 251);
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .text{
+        text-align: justify;
+    }
+    .bor{
+        border-radius: 15px;
+    }
+   
+    hr{
+        width: 100%;
+        padding: 0;
+        margin: 20px 0px;
+        border-bottom: 2px solid rgb(189, 188, 188);
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 300px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 90px;
+        text-align: center;
+        background-color: black;
+    }
+    footer>hr{
+        display: none;
+
+    }
+   
+    @media only screen and (max-width: 991px) {
+       
+  
+    footer{
+        flex-direction: column;
+        height: 600px;
+    }
+    footer >hr{
+        display: block;
+    }
+
+    }
+
+    
