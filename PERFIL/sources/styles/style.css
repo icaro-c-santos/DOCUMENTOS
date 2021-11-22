@@ -1,8 +1,11 @@
 body{
     background-image: url("../img/work-gc7a0757e4_1920.jpg");
     margin: auto;
-    max-width: 1400px;
 }
+main{
+    max-width: 1400px;
+    margin: auto;
+ }
     .jumbotron {
       padding: 4rem 2rem;
       margin-bottom: 2rem;

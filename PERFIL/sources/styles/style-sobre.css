@@ -1,14 +1,17 @@
 body{
     background-image: url("../img/work-gc7a0757e4_1920.jpg");
     margin: auto;
-    max-width: 1400px;
 }
- 
+ main{
+    max-width: 1400px;
+    margin: auto;
+ }
     .sobremim{
         background-color:  rgba(0, 0, 0, 0.808);
         color: rgb(251, 251, 251);
         padding: 20px;
         border-radius: 15px;
+        margin: auto;
     }
     .text{
         text-align: justify;
@@ -40,18 +43,34 @@ body{
         display: none;
 
     }
-   
+
     @media only screen and (max-width: 991px) {
        
   
-    footer{
-        flex-direction: column;
-        height: 600px;
-    }
-    footer >hr{
-        display: block;
-    }
+        .dados{
+               height: auto;
+               margin: 50px auto;
+               padding: 40px;
+           }
+       footer{
+           flex-direction: column;
+           height: 600px;
+       }
+       footer >hr{
+           display: block;
+       }
+   
+       }
 
-    }
 
+    @media only screen and (max-width: 500px) {
+       
+
+        .sobremim{
+            padding:20px 0px;
+        }
+        .texto_apresentacao{
+            padding: 20px;
+        }
     
+        }
