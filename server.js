@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended:true}));
 
 
 app.get("/aluno",(req, res)=>{
-    res.send("SERVIDOR ATIO"); 
+    res.send("SERVIDOR ATIVO"); 
 });
 
 app.post("/cadastro-aluno",(req,res)=> {
@@ -17,14 +17,11 @@ app.post("/cadastro-aluno",(req,res)=> {
     let idade = req.body.idade;
     let sexo = req.body.sexo;
     let serie = req.body.serie;
-g
-     if(1<0){
+
+    
         res.statusCode = 200;
         res.send("ALUNO CADASTRADO COM SUCESSO!");
-     }else{
-       res.statusCode = 402;
-       res.send("ERRO!");
-     }
+     
 
 });
 app.listen(8070);
