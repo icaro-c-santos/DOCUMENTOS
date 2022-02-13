@@ -5,6 +5,8 @@ body{
     flex-flow: column nowrap;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+
 }
 
 .voltar{
@@ -12,7 +14,6 @@ body{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    padding: 0px 20px;
 }
 .voltar >p{
     font-size: 25px;
@@ -20,15 +21,11 @@ body{
     font-weight: bold;
 }
 
-header{
-    margin-bottom: 30px;
-}   
-
 form{
     display: flex;
     flex-flow: column nowrap;
-    max-width: 400px;  
-    margin: 20px 0px 100px 0px;
+    width: 420px;
+    margin: 20px 0px 10px 0px;
     font-size: 20px;
 }
 
@@ -65,19 +62,41 @@ form{
   
 }
 
-form>p{
-    color: rgb(235, 230, 230);
-    text-align: center;
+#carregar{
+    animation-name: load;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 40px;
+    margin: auto;
 }
 
-form >p >a{
+
+@keyframes load {
+
+        from {
+            transform: rotateZ(0);
+        }
+        to {
+            transform: rotateZ(360deg);
+        }
+}
+
+
+
+
+p{
+    color: rgb(235, 230, 230);
+    text-align: center;
+    margin-top: 10px;
+}
+p >a{
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration: none;
 }
 
-
-form >p >a:hover{
+p >a:hover{
     cursor: pointer;
 }
 
@@ -86,21 +105,23 @@ form >p >a:hover{
 {
     
     .voltar >p{
-        padding-left: 10px;
+        
+        font-size: 20px;
+    
     }
+
     form{
-        margin: 0px 25px;
+        margin: 0px 50px;
+        width: 60vw;
+      
     }
-    #email::placeholder,#senha::placeholder{
+    #email::placeholder,#senha::placeholder,#nome::placeholder{
         font-weight: bold;
-        font-size: 14px;
+        font-size: 15px;
       }
-    #email,#senha{
+    #email,#senha,#nome,#entrar{
         height: 40px;
-        font-size: 16px;
-        margin-bottom: 20px;
-        border: 2px solid rgb(255, 255, 255);
-        border-radius: 4px;
+        font-size: 15px;
     }
 }
 

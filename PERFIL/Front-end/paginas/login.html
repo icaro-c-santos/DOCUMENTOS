@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style_login&cadastro.css">
+    <script type="module" src="../scripts/login.js"></script>
     <title>LOGIN</title>
 </head>
 <body>
     
     <div class="voltar">
-      <a target="_self" href="index.html"><img src="../pictures/SETA.png"  style="width: auto;" alt="SETA VOLTAR" title="SETA VOLTAR"></a> 
+      <a target="_self" href="index.html">
+        <picture>
+          <source media="(min-width:500px)" srcset="../pictures/SETA.png">
+              <img src="../pictures/SETA-pequena.png"  alt="SETA VOLTAR" title="SETA VOLTAR">
+        </picture>
+       
+      </a> 
       <p>Login</p>
     </div>
    
@@ -28,14 +35,12 @@
           </picture>
    
 
-    <form action="">
-        <input type="email" required name="email"  id="email" aria-label="DIGITE SEU EMAIL." title="email" placeholder="Digite seu e-mail">
-        <input type="password" required name="senha"  id="senha" aria-label="DIGITE SUA SENHA" title="senha" placeholder="Digite sua senha de acesso">
-        <button type="submit" name="entrar" id="entrar"  title="ENTRAR" aria-label="ENTRAR">Entrar</button>
-
-    <p>Não possui um acesso? <a target="_self" href="./cadastro.html">Cadastre-se aqui.</a></p>
-
+    <form  id="form">
+        <input type="email"  name="email"  id="email" aria-label="DIGITE SEU EMAIL." title="email" placeholder="Digite seu e-mail">
+        <input type="password"  name="senha"  id="senha" aria-label="DIGITE SUA SENHA" title="senha" placeholder="Digite sua senha">
+        <button type="button" name="entrar" id="entrar"   title="ENTRAR" aria-label="ENTRAR">Entrar</button>
     </form>
-
+    <p>Não possui um acesso? <a target="_self" href="./cadastro.html">Cadastre-se aqui.</a></p>
+   
 </body>
 </html>
