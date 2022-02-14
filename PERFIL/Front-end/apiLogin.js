@@ -1,19 +1,19 @@
-const banco =[];
 
+import fetch from "node-fetch";
 
+const host = "https://www.cuidadodesalud.gov"
 
-async function criarUsuario(email,senha,nome){
+async function getArtigos(){
 
-    const novousuario ={
-        email: email,
-        senha: senha,
-        nome: nome
-    }
-    banco.push(novousuario);
-    return true
-}
+  const result = await fetch("https://www.healthcare.gov/api/articles.json",{
+    method: "GET", 
+    headers: {
+        
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    })
 
-
-async function buscarUsuario(email,senha,nome){
-    
+    return await result.json();
+ 
 }

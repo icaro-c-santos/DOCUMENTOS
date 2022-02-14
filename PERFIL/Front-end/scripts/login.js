@@ -4,6 +4,8 @@ function alerte(mensagem){
         
     const alert = document.getElementById("help");
     alert.innerText = mensagem;
+    alert.style.padding = "20px";
+    alert.style.border = "4px solid red";
     window.scrollTo(0,400);
   }
 
@@ -36,7 +38,7 @@ function alerte(mensagem){
                     'Accept': 'application/json'
                 },
                  body: JSON.stringify(body),
-                });
+                }).catch(error => {throw new Error("ERRO NO SERVIDOR!: TENTE MAIS TARDE.")});
 
              if(result.status != 200){ throw new Error("USUARIO OU SENHA INVALIDO!")};
              return true;

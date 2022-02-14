@@ -4,7 +4,11 @@ const server = "http://localhost:3002";
 function alerte(mensagem) {
 
     const alert = document.getElementById("help");
+    alert.style.padding = "20px";
+    alert.style.border = "4px solid red";
+  
     alert.innerText = mensagem;
+
     window.scrollTo(0, 400);
 }
 

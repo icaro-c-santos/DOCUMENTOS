@@ -28,7 +28,7 @@ body{
     color: rgb(3, 0, 0);
     font-weight: bold;
     margin: 20px 20px 20px 20px;
-    text-align: center;
+    text-align: justify;
     background-color: antiquewhite;
 }
 
@@ -144,6 +144,9 @@ form{
 {
     #voltar >p{
         font-size: 18px;
+    }
+    #help{
+        font-size: 12px;
     }
     #termos{
         font-size: 16px;
