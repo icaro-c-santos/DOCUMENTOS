@@ -24,16 +24,14 @@ app.post("/cadastro",async(req,res,next)=>{
     const senha = req.body.senha;
     const nome = req.body.nome;
 
-   const novoUsuario = {
+    const novoUsuario = {
         email:email,
         senha: senha,
         nome: nome
     }
-    console.log(novoUsuario)
 
     banco.push(novoUsuario);
     res.status(201).send();
-
 })
 
 app.post("/login",(req,res,next)=>{
@@ -41,7 +39,6 @@ app.post("/login",(req,res,next)=>{
     const email = req.body.email;
     const senha = req.body.senha;
     const result =  banco.filter(user => user.email == email && user.senha == senha);
-   console.log(banco);
     if(result.length>0){
         res.status(200).json("USUARIO LOGADO!");
     }else{

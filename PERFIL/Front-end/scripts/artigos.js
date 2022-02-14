@@ -1,5 +1,6 @@
 const local = "http://localhost:3001/artigos";
 const url = 'https://www.healthcare.gov/api/articles.json';
+const host = "https://www.cuidadodesalud.gov/"
 
 async function buscarArtigo(){
    const result =  await fetch(local,{
@@ -16,11 +17,33 @@ const artigo = {
 }
 
 
-    const titulo = document.createElement("h3").innerText= "DATA: "+ artigo.date;
-    const link = document.createElement("a").href = ""+url+artigo.url+"";
-    document.getElementById("artigosTela").append(titulo);
-    document.getElementById("artigosTela").append(link);
-    document.getElementById("artigosTela").innerHTML = artigo.content;
+
+
+    const dataArtigo = document.createElement("div");
+    const uriArtigo = document.createElement("a");
+    const contentArtigo = document.createElement("div");
+    const titulo = document.createElement("")
+
+
+    dataArtigo.setAttribute("id","dataArtigo");
+    uriArtigo.setAttribute("id","uriArtigo");
+    contentArtigo.setAttribute("id","contentArtigo");
+
+
+    dataArtigo.innerText = "DATA: "+ artigo.date;
+    uriArtigo.innerText  = "VER ARTIGO COMPLETO";
+    uriArtigo.href = host+artigo.url;
+    contentArtigo.innerHTML = "TEXTO:"+artigo.content;
+
+
+    //const link = document.createElement("a").href = ""+url+artigo.url+"";
+
+    document.getElementById("artigosTela").append(dataArtigo);
+    document.getElementById("artigosTela").append(uriArtigo);
+    document.getElementById("artigosTela").append(contentArtigo);
+
+
+
 
 
 
