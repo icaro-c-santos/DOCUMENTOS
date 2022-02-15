@@ -11,11 +11,17 @@
    <title>ARTIGOS</title>                   
 </head>
 
-<body>
-    <div class="voltar">
-        <a target="_self" href="index.html"><img src="../pictures/SETA.png"  style="width: auto;" alt="SETA VOLTAR" title="SETA VOLTAR"></a> 
-        <p>Sair</p>
-    </div>
+<div class="voltar">
+    <a target="_self" href="index.html">
+      <picture>
+        <source media="(min-width:600px)" srcset="../pictures/SETA.png">
+        <source media="(min-width:400px)" srcset="../pictures/SETA-media.png">
+        <img src="../pictures/SETA-pequena.png"  alt="SETA VOLTAR" title="SETA VOLTAR">
+      </picture>
+    </a> 
+    <p>Sair</p>
+  </div>
+
     <header>  
        <picture>
            <source media="(min-width:500px)" srcset="../pictures/logo-sanar-grande.png">
@@ -24,13 +30,13 @@
    
        <h1>BUSQUE AQUI O SEU ARTIGO</h1>
        <form action="">
-        <input class="texto" type="text"  id="" aria-label="DIGITE O NOME DO ARTIGO" placeholder="DIGITE O ARTIGO">
+        <input  type="text"  id="texto" aria-label="DIGITE UMA PALAVRA" placeholder="DIGITE UMA PALAVRA">
         <button type="button" id="pesquisar" >Pesquisar</button>
     </form>
 
    </header>
 
-   <main>
+   <main id="main">
        
    </main>
 

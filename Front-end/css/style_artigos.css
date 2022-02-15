@@ -3,21 +3,19 @@ body{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
 }
 
 header{
-    font-size: 2em;
+    text-align: center;
+}
+
+h1{
     font-weight: 700;
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
-
-
-h1{
-    margin-top: 0px;
+    font-size: 30px;
+    margin: 0px 30px 20px 30px;
 }
 .voltar{
     width: 100%;
@@ -32,14 +30,14 @@ h1{
     font-weight: bold;
 }
 
-.texto::placeholder{
+#texto::placeholder{
    text-align: center;
-   font-size: 20px;
+   font-size: 18px;
 }
-.texto{
+#texto{
     width: 400px;
-    height: 50px;
-    font-size: 22px;
+    height: 44px;
+    font-size: 20px;
 }
 
 button{
@@ -48,25 +46,33 @@ button{
 }
 
 main{
-   margin: 80px 0px 0px 0px;
    display: flex;
    flex-flow: row wrap;
    justify-content: space-evenly;
+   margin: 22px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 #artigo{
+
     transition: 0.5s;
     border: 8px double black;
     display: flex;
     flex-flow: column nowrap;
-    width: 350px;
-    height: 200px;
-    padding: 20px;
+    padding: 0px 10px;
+    width: 300px;
+    height: 180px;
     box-shadow: rgba(5, 5, 5, 0.699) 1px 12px 20px;
     color: black;
     background-color: antiquewhite;
     overflow: auto;
-    margin:25px  10px;
+    margin:25px 20px;
 }
 
 #link{
@@ -88,13 +94,15 @@ main{
 }
 
 #data{
-    margin: -10px -10px 20px 0px;
+    margin: 5px 5px 0px 0px;
     align-self: flex-end;
+    -ms-align-self: flex-end; 
+    font-size: 14px;
 }
 
 #titulo{
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #artigo >p{
@@ -102,12 +110,94 @@ main{
 }
 
 
-@media (max-width: 500px)
+@media (max-width: 600px)
 {
 
+    h1{
+        font-size: 5vw; 
+        margin: 20px 0px 0 0px;
+    }
+    form{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
 
+        margin-bottom: 0px;
+    }
+    #texto{
+        margin:20px 20px;
+        width: auto;
+        height: 25px;
+    
+    }
+
+    #texto::placeholder{
+        font-size: 14px;
+    }
+
+    .voltar>p{
+        font-size: 22px;
+    }
+
+    #pesquisar{
+        height: 30px;
+    }
+    #artigo{
+        padding: 10px 5px 10px 10px;
+        margin-top: 30px;
+    }
+    #titulo{
+        font-size: 18px;
+    }   
+    #data{
+        font-size: 20px;
+        font-weight: 50;
+        margin: 0px;
+    }
+    
 }
 
-footer{
-    height: 100px;
+
+@media (max-width: 400px)
+{
+    header{
+        font-size: 4vw;
+    }
+    form{
+        flex-flow: column nowrap;
+    }
+    #texto{
+        width: 200px;
+        height: 25px;
+        font-size: 16px;
+    }
+    .voltar>p{
+        font-size: 15px;
+    }
+    main{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #texto::placeholder{
+        font-size: 14px;
+    }
+    #pesquisar{
+        height: 30px;
+    }
+    #artigo{
+        padding: 10px 5px 10px 10px;
+        width: 200px;
+        height: auto;
+        margin: 10px 0px;
+    }
+    #titulo{
+        font-size: 16px;
+    }   
+    #data{
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0px;
+    }
 }
+

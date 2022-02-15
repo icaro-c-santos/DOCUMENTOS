@@ -16,3 +16,8 @@ artigo.js: codigo javascript da pagina artigos, ele é responsavel por fazer uma
 A pagina web faz as requisições de login,cadastro e obter artigos para o servidor.js
 servidor.js: codigo javascript responsavel por receber as solicitações validar o usuario, cadastrar o usuario, fazer uma requisição para a API da HealthCare retornar os dados para
 a construção da pagina artigo;
+
+
+
+FALTA FAZER?
+PRECISA MELHORAR A IMPLEMENTAÇÃO DA FUNÇÃO DE BUSCA (ESTÁ BUSCANDO O TEXTO DENTRO DE PALAVRAS EX: SIM   BUSCA "SIM"PATICO "SIM"PLES )
