@@ -3,24 +3,16 @@ const server = "http://localhost:3002";
 
 function alerte(mensagem) {
 
-    const alert = document.getElementById("help");
-    alert.style.padding = "20px";
-    alert.style.border = "4px solid red";
-  
+    const alert = document.getElementsByClassName("help")[0];
+    alert.setAttribute("id","help");
     alert.innerText = mensagem;
-
-    window.scrollTo(0, 40);
 }
 
 function alertSucesso(mensagem){
-    const alert = document.getElementById("help");
-    alert.style.padding = "20px 30px";
-    alert.style.color = "green";
-    alert.style.backgroundColor = "white";
-    alert.style.border = "4px solid green";
+    
+    const alert = document.getElementsByClassName("help")[0];
+    alert.setAttribute("id","helpSucesso");
     alert.innerText = mensagem;
-    window.scrollTo(0, 40);
-
 }
 
 
@@ -47,7 +39,7 @@ async function cadastro() {
     try {
         if (!validNome(nome)) { throw new Error("PREENCHA O CAMPO NOME!") };
         if (!validEmail(email)) { throw new Error("FORMATO DE EMAIL INVALIDO!") };
-        if (!validSenha(senha)) { throw new Error("FORMATO DE SENHA INVALIDO! \nDIGITE  8 DIGITOS OU MAIS CONTENDO PELO MENOS: \n1 NUMERO \n1 CARACTERE ESPECIAL DO TIPO !@$%&*-+ \n1 CARACTERE MINUSCULO. \n1 CARACTERE MAIUSCULO.") };
+        if (!validSenha(senha)) { throw new Error("A senha deve conter 8 digitos ou mais e pelo menos:\n1 - Número \n1 - Caractere do tipo: !@$%&*-+ \n1 - Caractere maiúsculo \n1 - Caractere minúsculo") };
         const result = await fetch(server + "/cadastro", {
             method: "POST",
             headers: {
@@ -89,7 +81,7 @@ document.getElementById('entrar').onclick = function () {
     cadastro().then(res => {
         alertSucesso("USUARIO CADASTRADO COM SUCESSO!");
         form.removeChild(nodeImg);
-        setTimeout(() => {window.location.href = "./login.html"}, 2000);
+        setTimeout(() => {window.location.href = "./login.html"},2000);
     }).catch(error => {
             alerte(error.message || "ERRO NO SERVIDOR!")
             form.removeChild(nodeImg);
@@ -101,7 +93,6 @@ document.getElementById('entrar').onclick = function () {
         });
 
 }
-
 
 
 export default cadastro;

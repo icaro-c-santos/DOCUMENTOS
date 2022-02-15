@@ -56,7 +56,8 @@ async function addArtigo(artigoItem) {
     titulo.setAttribute("id","titulo");
     data.setAttribute("id","data");
 
-    link.href = host+artigoItem.url;
+    link.href = artigoItem.url;
+    link.target = "_blank";
     titulo.innerText = artigoItem.title;
     data.innerText = artigoItem.date;
     vermais.innerText = "Ver Artigo";
@@ -80,5 +81,5 @@ obterArtigos().then(p => p.forEach(addArtigo))
 
 
 document.getElementById('filtrar').onclick = function () {
-    
+
 }

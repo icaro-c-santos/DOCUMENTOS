@@ -24,12 +24,14 @@ body{
 }
 
 #help{
-    font-size: 25px;
-    color: rgb(0, 0, 0);
+    font-size: 20px;
+    color: rgb(236, 0, 0);
     font-weight: bold;
-    margin-top: 20px;
+    margin: 20px auto;
+    padding: 20px;
     text-align: center;
-    background-color: antiquewhite;
+    border: dotted;
+    background-color: rgb(245, 239, 239); 
 }
 
 header{
@@ -88,7 +90,7 @@ form{
 p{
     color: rgb(235, 230, 230);
     text-align: center;
-    margin-top: 0px;
+    margin-top: 15px;
     font-size: 25px;
 }
 p >a{
@@ -119,6 +121,8 @@ p >a:hover{
     #help{
         font-size: 16px;
     }
+
+    
 
     #voltar >p{
         

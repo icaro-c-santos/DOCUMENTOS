@@ -1,13 +1,12 @@
 const server = "http://localhost:3002";
 
-function alerte(mensagem){
-        
-    const alert = document.getElementById("help");
-    alert.innerText = mensagem;
-    alert.style.padding = "20px";
-    alert.style.border = "4px solid red";
-    window.scrollTo(0,400);
-  }
+    function alerte(mensagem) {
+
+        const alert = document.getElementsByClassName("help")[0];
+        alert.setAttribute("id","help");
+        alert.innerText = mensagem;
+    }
+    
 
 
     function validEmail(email){
@@ -68,8 +67,8 @@ function alerte(mensagem){
         form.append(nodeImg);
 
         login().then(e => window.location.href="./artigos.html")
-        .catch( error =>alerte(error.message || "ERRO NO SERVIDOR!"))
-        .finally(()=>{
+        .catch( error =>{
+            alerte(error.message || "ERRO NO SERVIDOR!");
             form.removeChild(nodeImg);
             senha.value = "";
             email.removeAttribute("readOnly");
