@@ -1,22 +1,22 @@
-const local = "http://localhost:3001/artigos";
-const url = 'https://www.healthcare.gov/api/articles.json';
-const host = "https://www.cuidadodesalud.gov"
 
-//import fetch from "node-fetch" //EXCLUIR ANTES DE IR PRA PRODUÇÃO.
+const local = "http://localhost:3002/artigos"; // URL DO SERVIDOR PARA REQUISIÇÕES
+const host = "https://www.cuidadodesalud.gov"  // dominio da API HEALTCARE
+
+
+
 
 async function buscarArtigos() {
-    const result = await fetch(url, {
+    const result = await fetch(local, {
         method: "GET",
         body: JSON.stringify(),
     })
     return result.json();
 }
 
-async function convertArtigos(artigos) {  ///
 
-    return await artigos.map(artigo => {
-        artigo.date = convertData(artigo.date);
-        artigo.url = convertUrl(artigo.url);
+async function convertArtigos(artigos) {  
+    return await artigos.array.forEach(artigo => {
+     
     });
 }
 
@@ -65,13 +65,20 @@ async function addArtigo(artigoItem) {
     main.append(link);
 }
 
-buscarArtigos().then(res =>{
+async function obterArtigos(){
 
-    convertArtigos(res.articles).then(console.log);
+   const dados = await buscarArtigos();
+   await dados.articles.forEach(artigo=> {
+         artigo.date = convertData(artigo.date);
+        artigo.url = convertUrl(artigo.url);
+   })
+
+   return dados.articles;
+}
+
+obterArtigos().then(p => p.forEach(addArtigo))
 
 
-})
-
-
-
-//export default buscarArtigo;
+document.getElementById('filtrar').onclick = function () {
+    
+}

@@ -9,7 +9,18 @@ function alerte(mensagem) {
   
     alert.innerText = mensagem;
 
-    window.scrollTo(0, 400);
+    window.scrollTo(0, 40);
+}
+
+function alertSucesso(mensagem){
+    const alert = document.getElementById("help");
+    alert.style.padding = "20px 30px";
+    alert.style.color = "green";
+    alert.style.backgroundColor = "white";
+    alert.style.border = "4px solid green";
+    alert.innerText = mensagem;
+    window.scrollTo(0, 40);
+
 }
 
 
@@ -75,12 +86,12 @@ document.getElementById('entrar').onclick = function () {
     nodeImg.setAttribute("src", "../pictures/carregar.png");
     form.append(nodeImg);
 
-    cadastro().then(e => {
-        alerte("USUARIO CADASTRADO COM SUCESSO!");
-        window.location.href = "./login.html"
-    })
-        .catch(error => alerte(error.message || "ERRO NO SERVIDOR!"))
-        .finally(() => {
+    cadastro().then(res => {
+        alertSucesso("USUARIO CADASTRADO COM SUCESSO!");
+        form.removeChild(nodeImg);
+        setTimeout(() => {window.location.href = "./login.html"}, 2000);
+    }).catch(error => {
+            alerte(error.message || "ERRO NO SERVIDOR!")
             form.removeChild(nodeImg);
             senha.value = "";
             nome.removeAttribute("readOnly");
