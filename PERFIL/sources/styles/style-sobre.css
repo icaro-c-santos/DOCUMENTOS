@@ -47,6 +47,14 @@ body{
 
     }
 
+    #lista{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #lista >li{
+        width: 150px;
+    }
+
     @media only screen and (max-width: 991px) {
        
   
